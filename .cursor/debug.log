@@ -1,0 +1,3 @@
+{"location":"build-with-log.js","message":"build-entry","data":{"cwd":"/Users/mahesh/Coding","hypothesisId":"H1"},"timestamp":1769966150045,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"build-with-log.js","message":"build-before-exec","data":{"projectDir":"/Users/mahesh/Coding/mahesh-college-counseling","hypothesisId":"H1"},"timestamp":1769966150049,"sessionId":"debug-session","hypothesisId":"H1"}
+{"location":"build-with-log.js","message":"build-success","data":{"exitCode":0,"hypothesisId":"H1"},"timestamp":1769966185556,"sessionId":"debug-session","hypothesisId":"H1"}
