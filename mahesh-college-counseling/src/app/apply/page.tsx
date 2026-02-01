@@ -25,7 +25,7 @@ export default function ApplyPage() {
         body: JSON.stringify(data),
       });
       const json = await res.json();
-      if (!res.ok) throw new Error(json.error || "Failed to submit");
+      if (!res.ok) throw new Error(json.debug ? `${json.error}: ${json.debug}` : json.error || "Failed to submit");
       setSubmitted(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");

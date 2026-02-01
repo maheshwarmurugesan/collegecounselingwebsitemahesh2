@@ -137,11 +137,30 @@ After updating the repo, database, and env vars:
 
 ---
 
+## Troubleshooting: "Failed to submit application"
+
+If form submission always fails:
+
+1. **Debug mode**: The app now shows the actual error on screen when submission fails. Deploy, submit, and read the error message.
+
+2. **Supabase pooler URL**: Use the **pooler** (Session or Transaction mode), not the direct connection:
+   - Supabase → Connect → Connection String → **Session mode** or **Transaction pooler**
+   - Format: `postgresql://postgres.PROJECT_REF:PASSWORD@HOST.pooler.supabase.com:6543/postgres?pgbouncer=true`
+   - Replace `[YOUR-PASSWORD]` with your database password
+   - Add `?pgbouncer=true` at the end (required for Prisma)
+   - Use the **exact** host Supabase shows (e.g. `aws-0-us-west-2` or `aws-8-us-west-2`)
+
+3. **Verify DATABASE_URL in Vercel**: Settings → Environment Variables. Must match the Supabase Connect string exactly.
+
+4. **Redeploy** after changing environment variables.
+
+---
+
 ## Quick checklist
 
 - [ ] Next.js code is at repo root or Root Directory is set to `mahesh-college-counseling`
 - [ ] PostgreSQL database is created and `DATABASE_URL` is set
 - [ ] Prisma schema uses `provider = "postgresql"`
-- [ ] Migrations run: `npx prisma migrate deploy`
+- [ ] Tables exist (run SQL in Supabase or `npx prisma db push` locally)
 - [ ] `NEXTAUTH_SECRET` and `NEXTAUTH_URL` are set
 - [ ] Redeploy after changes

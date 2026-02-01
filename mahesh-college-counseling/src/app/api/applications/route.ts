@@ -43,12 +43,13 @@ export async function POST(req: Request) {
       },
     });
 
-    // Email spreadsheet to admin only
+    // Email spreadsheet to admin only (non-blocking; do not fail if email fails)
     const apiKey = process.env.RESEND_API_KEY;
     const fromEmail = process.env.FROM_EMAIL;
     const adminEmail = process.env.ADMIN_EMAIL || "admin@maheshcollegecounseling.com";
     if (apiKey && fromEmail && adminEmail) {
-      const resend = new Resend(apiKey);
+      try {
+        const resend = new Resend(apiKey);
       const csvHeaders = "Full Name,Email,Instagram,School,Class Year,GPA,Activities,What Makes Unique,Why Mentorship,Status,Submitted At";
       const csvRow = [
         `"${(data.fullName || "").replace(/"/g, '""')}"`,
@@ -82,25 +83,29 @@ export async function POST(req: Request) {
         <p style="margin-top: 16px; color: #6b7280; font-size: 12px;">CSV attachment included for spreadsheet import.</p>
       `;
 
-      await resend.emails.send({
-        from: fromEmail,
-        to: adminEmail,
-        subject: `New Application: ${data.fullName} (Class of ${data.classYear})`,
-        html,
-        attachments: [
-          {
-            filename: `application-${applicant.id}-${new Date().toISOString().slice(0, 10)}.csv`,
-            content: csvBase64,
-          },
-        ],
-      });
+        await resend.emails.send({
+          from: fromEmail,
+          to: adminEmail,
+          subject: `New Application: ${data.fullName} (Class of ${data.classYear})`,
+          html,
+          attachments: [
+            {
+              filename: `application-${applicant.id}-${new Date().toISOString().slice(0, 10)}.csv`,
+              content: csvBase64,
+            },
+          ],
+        });
+      } catch (emailErr) {
+        console.error("Email send failed (application saved):", emailErr);
+      }
     }
 
     return NextResponse.json({ id: applicant.id });
   } catch (err) {
     console.error("Application error:", err);
+    const debugMsg = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { error: "Failed to submit application" },
+      { error: "Failed to submit application", debug: debugMsg },
       { status: 500 }
     );
   }
