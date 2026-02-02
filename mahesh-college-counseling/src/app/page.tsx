@@ -128,7 +128,7 @@ export default function Home() {
               The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplements you have.
             </p>
             <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
-              I charge separately for editing and helping you write essays start to finish. Everyone has a different number of essays, so this is tailored to your list. We figure out the exact amount once your list is set.
+              I charge separately for editing and helping you write essays start to finish (around $50 per essay start to finish). Everyone has a different number of essays, so this is tailored to your list. We figure out the exact amount once your list is set.
             </p>
           </div>
         </section>
