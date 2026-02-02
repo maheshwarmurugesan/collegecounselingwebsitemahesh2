@@ -79,7 +79,7 @@ export default function Home() {
             <div className="text-5xl sm:text-6xl font-semibold tracking-tight text-white">$1,000</div>
             <p className="text-silver mt-2 font-light">Base price. You pay this now and are covered until college apps.</p>
             <p className="text-zinc-500 mt-3 text-sm">
-              Additional pricing depends on your college list length and essays (around $50 per essay start to finish). See below.
+              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list. See below.
             </p>
           </div>
         </section>
@@ -124,12 +124,12 @@ export default function Home() {
         <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold mb-2 tracking-tight text-white">Essay support and supplements</h2>
-            <p className="text-silver mb-6 text-lg">Around $50 per essay start to finish.</p>
+            <p className="text-white font-medium mb-6 text-xl">Each supplemental is $50 (start to finish).</p>
             <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
-              The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplements you have.
+              The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplementals you have.
             </p>
             <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
-              I charge separately for editing and helping you write essays start to finish (around $50 per essay start to finish). Everyone has a different number of essays, so this is tailored to your list. We figure out the exact amount once your list is set.
+              I charge $50 per supplemental for editing and helping you write each one start to finish. Everyone has a different number of supplementals, so the total is tailored to your list. We figure out the exact amount once your list is set.
             </p>
           </div>
         </section>
@@ -194,7 +194,7 @@ export default function Home() {
               <div>
                 <h3 className="font-medium mb-2 text-white">How does pricing work?</h3>
                 <p className="text-zinc-400">
-                  $1,000 is the base price you pay now. It covers everything until college apps: Common App prep, building your college list, getting ahead so you feel less stressed. Later, depending on how many colleges you apply to and how many essays and supplements we work on together, there is an additional charge for essay editing and writing help start to finish.
+                  $1,000 is the base price you pay now. It covers everything until college apps: Common App prep, building your college list, getting ahead so you feel less stressed. Each supplemental essay is $50 (start to finish). How many supplementals you have depends on your college list, so the total on top of the base is tailored to you.
                 </p>
               </div>
               <div>
