@@ -79,7 +79,7 @@ export default function Home() {
             <div className="text-5xl sm:text-6xl font-semibold tracking-tight text-white">$1,000</div>
             <p className="text-silver mt-2 font-light">Base price. You pay this now and are covered until college apps.</p>
             <p className="text-zinc-500 mt-3 text-sm">
-              Additional pricing depends on your college list length and how many essays we work on together (see below).
+              Additional pricing depends on your college list length and essays (around $50 per essay start to finish). See below.
             </p>
           </div>
         </section>
@@ -123,7 +123,8 @@ export default function Home() {
         {/* Essay & supplement pricing section */}
         <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold mb-6 tracking-tight text-white">Essay support and supplements</h2>
+            <h2 className="text-2xl font-semibold mb-2 tracking-tight text-white">Essay support and supplements</h2>
+            <p className="text-silver mb-6 text-lg">Around $50 per essay start to finish.</p>
             <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
               The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplements you have.
             </p>
