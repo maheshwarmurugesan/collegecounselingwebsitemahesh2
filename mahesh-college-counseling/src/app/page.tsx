@@ -77,31 +77,36 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold mb-4 tracking-tight text-white">How much does this cost?</h2>
             <div className="text-5xl sm:text-6xl font-semibold tracking-tight text-white">$1,000</div>
-            <p className="text-silver mt-2 font-light">Flat. One time.</p>
+            <p className="text-silver mt-2 font-light">Base price. You pay this now and are covered until college apps.</p>
+            <p className="text-zinc-500 mt-3 text-sm">
+              Additional pricing depends on your college list length and how many essays we work on together (see below).
+            </p>
           </div>
         </section>
 
         {/* Why $1k Section */}
         <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold mb-4 text-white">Why $1,000</h2>
-            <p className="text-zinc-400 mb-10">One year of support from the date of purchase.</p>
-            <ul className="space-y-6 text-zinc-300 text-left inline-block">
+            <h2 className="text-2xl font-semibold mb-4 text-white">What the base price includes</h2>
+            <p className="text-zinc-400 mb-8">
+              One year of support from the date of purchase. I help you get ahead so you feel more free and less stressed when application season hits.
+            </p>
+            <ul className="space-y-4 text-zinc-300 text-left inline-block">
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
-                Direct 1:1 access to Mahesh
+                Getting started prepping for the Common App
               </li>
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
-                Personal phone number for texting
+                Building and refining your college list
               </li>
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
-                Unlimited advice
+                How to prep and get ahead for college apps
               </li>
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
-                Bookable calls
+                Direct 1:1 access, personal number, bookable calls
               </li>
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
@@ -109,17 +114,22 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <span className="text-silver font-medium">•</span>
-                Small cohort
-              </li>
-              <li className="flex gap-3">
-                <span className="text-silver font-medium">•</span>
-                Students treated as priority
-              </li>
-              <li className="flex gap-3">
-                <span className="text-silver font-medium">•</span>
-                Not overloaded like traditional counselors
+                Small cohort, priority treatment
               </li>
             </ul>
+          </div>
+        </section>
+
+        {/* Essay & supplement pricing section */}
+        <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-semibold mb-6 tracking-tight text-white">Essay support and supplements</h2>
+            <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
+              The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplements you have.
+            </p>
+            <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
+              I charge separately for editing and helping you write essays start to finish. Everyone has a different number of essays, so this is tailored to your list. We figure out the exact amount once your list is set.
+            </p>
           </div>
         </section>
 
@@ -180,6 +190,12 @@ export default function Home() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-semibold mb-12 tracking-tight text-white">FAQ</h2>
             <div className="space-y-12 text-left">
+              <div>
+                <h3 className="font-medium mb-2 text-white">How does pricing work?</h3>
+                <p className="text-zinc-400">
+                  $1,000 is the base price you pay now. It covers everything until college apps: Common App prep, building your college list, getting ahead so you feel less stressed. Later, depending on how many colleges you apply to and how many essays and supplements we work on together, there is an additional charge for essay editing and writing help start to finish.
+                </p>
+              </div>
               <div>
                 <h3 className="font-medium mb-2 text-white">Who is this for?</h3>
                 <p className="text-zinc-400">
