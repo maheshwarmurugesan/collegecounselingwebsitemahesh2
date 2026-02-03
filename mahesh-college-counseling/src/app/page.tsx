@@ -79,17 +79,17 @@ export default function Home() {
             <div className="text-5xl sm:text-6xl font-semibold tracking-tight text-white">$1,000</div>
             <p className="text-silver mt-2 font-light">Base price. You pay this now and are covered until college apps.</p>
             <p className="text-zinc-500 mt-3 text-sm">
-              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list. See below.
+              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list.
             </p>
           </div>
         </section>
 
-        {/* Why $1k Section */}
+        {/* Why $1,000 Section */}
         <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold mb-4 text-white">What the base price includes</h2>
-            <p className="text-zinc-400 mb-8">
-              One year of support from the date of purchase. I help you get ahead so you feel more free and less stressed when application season hits.
+            <h2 className="text-2xl font-semibold mb-6 tracking-tight text-white">Why $1,000</h2>
+            <p className="text-zinc-400 mb-8 leading-relaxed">
+              This is exclusive. Only 20 students per cohort. I spend a lot of time with each of you: 1:1 calls, your personal number, real attention. One year of support from the date of purchase. I help you get ahead so you feel more free and less stressed when application season hits.
             </p>
             <ul className="space-y-4 text-zinc-300 text-left inline-block">
               <li className="flex gap-3">
@@ -117,19 +117,8 @@ export default function Home() {
                 Small cohort, priority treatment
               </li>
             </ul>
-          </div>
-        </section>
-
-        {/* Essay & supplement pricing section */}
-        <section className="py-24 px-6 border-t border-white/10" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(192,192,192,0.03) 100%)' }}>
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-semibold mb-2 tracking-tight text-white">Essay support and supplements</h2>
-            <p className="text-white font-medium mb-6 text-xl">Each supplemental is $50 (start to finish).</p>
-            <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
-              The base price covers you until college apps. When it&apos;s time to apply, how much you pay on top depends on your college list: how many schools you apply to and how many supplementals you have.
-            </p>
-            <p className="text-lg text-zinc-400 leading-relaxed text-left mb-6">
-              I charge $50 per supplemental for editing and helping you write each one start to finish. Everyone has a different number of supplementals, so the total is tailored to your list. We figure out the exact amount once your list is set.
+            <p className="text-zinc-500 mt-8 text-sm">
+              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list.
             </p>
           </div>
         </section>
