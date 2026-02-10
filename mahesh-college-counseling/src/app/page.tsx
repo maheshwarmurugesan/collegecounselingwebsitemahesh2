@@ -79,7 +79,7 @@ export default function Home() {
             <div className="text-5xl sm:text-6xl font-semibold tracking-tight text-white">$1,000</div>
             <p className="text-silver mt-2 font-light">Base price. You pay this now and are covered until college apps.</p>
             <p className="text-zinc-500 mt-3 text-sm">
-              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list.
+              Each supplemental essay is $75 (start to finish). Total on top of base depends on your college list.
             </p>
           </div>
         </section>
@@ -118,7 +118,7 @@ export default function Home() {
               </li>
             </ul>
             <p className="text-zinc-500 mt-8 text-sm">
-              Each supplemental essay is $50 (start to finish). Total on top of base depends on your college list.
+              Each supplemental essay is $75 (start to finish). Total on top of base depends on your college list.
             </p>
           </div>
         </section>
@@ -183,7 +183,7 @@ export default function Home() {
               <div>
                 <h3 className="font-medium mb-2 text-white">How does pricing work?</h3>
                 <p className="text-zinc-400">
-                  $1,000 is the base price you pay now. It covers everything until college apps: Common App prep, building your college list, getting ahead so you feel less stressed. Each supplemental essay is $50 (start to finish). How many supplementals you have depends on your college list, so the total on top of the base is tailored to you.
+                  $1,000 is the base price you pay now. It covers everything until college apps: Common App prep, building your college list, getting ahead so you feel less stressed. Each supplemental essay is $75 (start to finish). How many supplementals you have depends on your college list, so the total on top of the base is tailored to you.
                 </p>
               </div>
               <div>
