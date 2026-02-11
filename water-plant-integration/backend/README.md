@@ -29,6 +29,10 @@ uvicorn main:app --reload
 - API docs: http://127.0.0.1:8000/docs  
 - Health: http://127.0.0.1:8000/health  
 
+## CORS
+
+Browser requests are allowed only from configured frontend origin(s). Default in dev is `http://localhost:3000`. **For production**, set `FRONTEND_ORIGIN` to your frontend URL (comma-separated for multiple origins, e.g. `https://app.example.com,https://admin.example.com`). Requests from other origins are rejected by CORS.  
+
 ## Optional: forward to external E-Log
 
 When you have an external E-Log product (e.g. Elogger) and its API spec, add an adapter in `elog/connector.py` that calls `create_entry()` for our DB and then posts the same payload to the external API.

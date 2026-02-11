@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 
 from elog.models import Base
+import models_platform  # noqa: F401 - register ScadaReading, AlarmEvent, Reading, Alert, WorkOrderRecord, AuditLog
 
 # SQLite for zero-config dev. For production use Postgres and set DATABASE_URL.
 SQLITE_URL = "sqlite:///./elog.db"
